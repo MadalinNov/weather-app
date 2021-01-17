@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--FONTAWESOME-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <title>Weather App</title>
+</head>
+<body>
+    <main id="main">
+        <div id="bg">
+        </div>
+        <div id="weather">
+            <div id='search-form'>
+                <form type="submit" autocomplete="off">
+                    <div class="form-group">
+                        <input type='text' id="search-field" class="form-control" placeholder="Search Location..." value=""/>
+                    </div>
+                    <button type="submit" class="btn btn-danger">Search</button>
+                </form>
+            </div>
+            <div id="info-container">
+                <div id="info">
+                    <div class='city-temp'>
+                        <div>
+                            <h1 id="location">City</h1>
+                            <h1 id="temperature">Temperature</h1>
+                            <p id='temp'>Feels Like</p>
+                            <h3 id="condition">Weather Condition</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
